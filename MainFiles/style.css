@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    padding: 150px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 35px;
+    background-color: #b0595c;
+    color: #dedbe6;
+    box-shadow: 5px 5px 10px black;
+}
+
+.wrapper h1{
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+}
+
+.btn, .copy-text-btn {
+    position: relative;
+    margin: 0;
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #dedbe6;
+    border-radius: 10px;
+    color: #b0595c;
+    font-size: 18px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.btn, .copy-text-btn:hover {
+animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+}
+
+25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+}
+
+50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+}
+
+75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+}
+
+100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+}
+}
+
+.both-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.copy-text-btn{
+    margin-top: 20px;
+}
+
+
+
+
